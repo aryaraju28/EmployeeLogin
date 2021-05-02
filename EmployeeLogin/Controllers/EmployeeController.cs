@@ -32,12 +32,14 @@ namespace EmployeeLogin.Controllers
             employee.Name = reader["Name"].ToString();
             employee.Age = Convert.ToInt32(reader["Age"]);
             employee.Salary = Convert.ToInt32(reader["Salary"]);
-           
+
 
 
             reader.Close();
             con.Close();
             return employee;
+            
+
 
 
 
